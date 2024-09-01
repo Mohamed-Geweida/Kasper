@@ -46,7 +46,7 @@
     color: #777;
     line-height: 1.6;
     min-width: 180px;
-    max-width: 385px;
+    max-width: 550px;
     margin: 0 auto 7px;
 }
 
@@ -336,6 +336,7 @@ header nav .form i {
 
 .services .services-content .srv-box h3 {
     color: var(--main-color);
+    padding-top: 7px;
     margin-bottom: 30px;
 }
 
