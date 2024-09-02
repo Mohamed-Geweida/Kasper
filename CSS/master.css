@@ -312,7 +312,7 @@ header nav .form i {
 }
 
 .services {
-    padding-bottom: var(--section-padding);
+    padding: var(--section-padding) 0;
 }
 
 @media (min-width: 768px) {
@@ -366,6 +366,7 @@ header nav .form i {
     background-size: cover;
     position: relative;
     overflow: hidden;
+    padding: var(--section-padding) 0;
 }
 
 .design::before {
@@ -533,5 +534,64 @@ padding: var(--section-padding) 0;
     text-decoration: none;
     text-align: center;
     margin: 30px auto;
-    border-radius: 12px;
+    border-radius: 8px;
+    transition: background-color .3s ;
+}
+
+.portfloio a.more:hover {
+    background-color: #1bc0ed;
+}
+
+.video {
+    padding: var(--section-padding) 0;
+    position: relative;
+}
+
+.video::before {
+    content: "";
+    background-color: rgb(0 0 0 / 50%);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+.video video {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+}
+
+.video .text {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: var(--transparent-color);
+    color: white;
+    text-align: center;
+    width: 100%;
+    padding: 50px;
+}
+
+.video .text h2 {
+    text-transform: uppercase;
+    font-weight: normal;
+    margin-bottom: 30px;
+}
+
+.video .text p {
+    margin-bottom: 30px;
+}
+
+.video .text button {
+    background-color: #303030;
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color .3s;
+}
+
+.video .text button:hover {
+    background-color: #292929;
 }
