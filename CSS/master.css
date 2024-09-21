@@ -1156,3 +1156,50 @@ header nav .form i {
         margin-bottom: 40px;
     }
 }
+
+footer {
+    padding-top: var(--section-padding);
+    background-image: url(../images/subscribe.jpg);
+    position: relative;
+    color: white;
+}
+
+footer::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgb(0 0 0 / 75%);
+}
+
+footer .container {
+    position: relative;
+    text-align: center;
+    padding: 20px 0;
+}
+
+footer .container p:not(.copy) {
+    font-size: 22px;
+    padding: 15px 15px;
+    width: fit-content;
+    border-bottom: 1px solid white;
+    margin: 30px auto;
+}
+
+footer .container .social-i i {
+    font-size: 18px;
+    padding: 12px;
+    cursor: pointer;
+}
+
+footer .container .copy {
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+
+footer .container .copy span {
+    font-weight: bold;
+    color: var(--main-color);
+}
