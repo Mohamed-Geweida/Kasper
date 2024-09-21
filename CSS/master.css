@@ -312,7 +312,7 @@ header nav .form i {
 }
 
 .services {
-    padding: var(--section-padding) 0;
+    padding-bottom: var(--section-padding);
     margin-bottom: 100px;
 }
 
@@ -432,7 +432,7 @@ header nav .form i {
 }
 
 .portfloio {
-    padding: var(--section-padding) 0;
+    padding-bottom: var(--section-padding);
 }
 
 .portfloio .container ul {
@@ -600,21 +600,21 @@ header nav .form i {
 }
 
 .about {
-    padding-top: var(--section-padding);
+    padding-bottom: var(--section-padding);
     text-align: center;
     overflow: hidden;
 }
 
 .about img {
     position: relative;
-    bottom: -120px;
+    bottom: -135px;
     margin-top: -120px;
     max-width: 100%;
 }
 
 @media (max-width: 767px) {
     .about img {
-        bottom: -60px;
+        bottom: -95px;
         margin-top: -60px;
     }
 }
@@ -776,6 +776,7 @@ header nav .form i {
 
 .our-skills .container .testimonials .bullets .active {
     background-color: var(--main-color);
+    border-color: var(--main-color);
 }
 
 .our-skills .skills .prog-holder {
@@ -854,7 +855,7 @@ header nav .form i {
 }
 
 .pricing {
-    padding: var(--section-padding) 0;
+    padding-bottom: var(--section-padding);
 }
 
 .pricing .plans {
@@ -982,6 +983,7 @@ header nav .form i {
     position: relative;
     display: flex;
     align-items: center;
+    padding: 30px;
 }
 
 @media (max-width: 991px) {
@@ -1056,5 +1058,101 @@ header nav .form i {
 @media (max-width: 991px) {
     .subscribe .container p {
         margin: 20px 10px 10px 0;
+    }
+}
+
+.contact {
+    padding-bottom: var(--section-padding);
+}
+
+.contact .content {
+    display: flex;
+    justify-content: space-between;
+}
+
+@media (max-width: 767px) {
+    .contact .content {
+        flex-direction: column;
+    }
+    
+}
+.contact .content form {
+    flex-basis: 70%;
+}
+
+.contact .content form :focus {
+    outline: none;
+}
+
+.contact .content form .main-input {
+    display: block;
+    margin-bottom: 30px;
+    width: 100%;
+    border: 1px solid #ccc;
+    padding: 15px;
+}
+
+.contact .content form input[type="submit"] {
+    background-color: var(--main-color);
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    cursor: pointer;
+    transition: .4s background-color;
+    display: flex;
+    margin-left: auto;
+}
+
+.contact .content form input[type="submit"]:hover {
+    background-color: #1aaed7;
+}
+
+@media (max-width: 767px) {
+    .contact .content form input[type="submit"] {
+        margin: 0;
+        width: 100%;
+    }
+}
+
+.contact .content form textarea.main-input {
+    height: 200px;
+    resize: none;
+}
+
+.contact .content .info {
+    flex-basis: 25%;
+}
+
+@media (max-width: 767px) {
+    .contact .content .info {
+        order: -1;
+        text-align: center;
+    }
+}
+
+.contact .content .info h4 {
+    font-weight: 500;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+.contact .content .info span {
+    display: block;
+    color: #777;
+    padding: 10px 0;
+}
+
+.contact .content .info h4:nth-of-type(2) {
+    margin-top: 40px;
+}
+
+.contact .content .info address {
+    line-height: 2;
+    color: #777;
+}
+
+@media (max-width: 767px) {
+    .contact .content .info address {
+        margin-bottom: 40px;
     }
 }
