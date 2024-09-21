@@ -1032,12 +1032,10 @@ header nav .form i {
     padding: 10px 20px;
     color: white;
     background-color: var(--main-color);
-    border-color: white;
+    border: 1px solid white;
     border-left: none;
-    border-width: 1px;
     transition: .4s background-color;
     cursor: pointer;
-    outline: none;
     width: 130px;
 }
 
